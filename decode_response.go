@@ -13,8 +13,8 @@ import (
 
 	"github.com/beevik/etree"
 	"github.com/russellhaering/gosaml2/types"
-	dsig "github.com/russellhaering/goxmldsig"
-	"github.com/russellhaering/goxmldsig/etreeutils"
+	dsig "github.com/axxonsoft/goxmldsig"
+	"github.com/axxonsoft/goxmldsig/etreeutils"
 )
 
 func (sp *SAMLServiceProvider) validationContext() *dsig.ValidationContext {

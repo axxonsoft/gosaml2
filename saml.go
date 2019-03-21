@@ -6,8 +6,8 @@ import (
 	"time"
 
 	"github.com/russellhaering/gosaml2/types"
-	dsig "github.com/russellhaering/goxmldsig"
-	dsigtypes "github.com/russellhaering/goxmldsig/types"
+	dsig "github.com/axxonsoft/goxmldsig"
+	dsigtypes "github.com/axxonsoft/goxmldsig/types"
 )
 
 type ErrSaml struct {

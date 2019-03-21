@@ -6,7 +6,7 @@ import (
 
 	"github.com/jonboulle/clockwork"
 	"github.com/russellhaering/gosaml2"
-	"github.com/russellhaering/goxmldsig"
+	"github.com/axxonsoft/goxmldsig"
 )
 
 func TestValidateResponses(t *testing.T) {
