@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/russellhaering/gosaml2/types"
+	"github.com/axxonsoft/gosaml2/types"
 	dsig "github.com/axxonsoft/goxmldsig"
 	dsigtypes "github.com/axxonsoft/goxmldsig/types"
 )
