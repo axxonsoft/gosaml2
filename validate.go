@@ -67,18 +67,18 @@ func (sp *SAMLServiceProvider) VerifyAssertionConditions(assertion *types.Assert
 		warningInfo.InvalidTime = true
 	}
 
-	if conditions.NotOnOrAfter == "" {
-		return nil, ErrMissingElement{Tag: ConditionsTag, Attribute: NotOnOrAfterAttr}
-	}
-
-	notOnOrAfter, err := time.Parse(time.RFC3339, conditions.NotOnOrAfter)
-	if err != nil {
-		return nil, ErrParsing{Tag: NotOnOrAfterAttr, Value: conditions.NotOnOrAfter, Type: "time.RFC3339"}
-	}
-
-	if now.After(notOnOrAfter) {
-		warningInfo.InvalidTime = true
-	}
+	//if conditions.NotOnOrAfter == "" {
+	//	return nil, ErrMissingElement{Tag: ConditionsTag, Attribute: NotOnOrAfterAttr}
+	//}
+	//
+	//notOnOrAfter, err := time.Parse(time.RFC3339, conditions.NotOnOrAfter)
+	//if err != nil {
+	//	return nil, ErrParsing{Tag: NotOnOrAfterAttr, Value: conditions.NotOnOrAfter, Type: "time.RFC3339"}
+	//}
+	//
+	//if now.After(notOnOrAfter) {
+	//	warningInfo.InvalidTime = true
+	//}
 
 	for _, audienceRestriction := range conditions.AudienceRestrictions {
 		matched := false
